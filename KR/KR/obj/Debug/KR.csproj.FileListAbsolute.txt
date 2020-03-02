@@ -1,0 +1,10 @@
+D:\Работы\Документы\Универ\2 курс\Шарп\Курсач\KR\KR\bin\Debug\KR.exe.config
+D:\Работы\Документы\Универ\2 курс\Шарп\Курсач\KR\KR\bin\Debug\KR.exe
+D:\Работы\Документы\Универ\2 курс\Шарп\Курсач\KR\KR\bin\Debug\KR.pdb
+D:\Работы\Документы\Универ\2 курс\Шарп\Курсач\KR\KR\obj\Debug\KR.csprojAssemblyReference.cache
+D:\Работы\Документы\Универ\2 курс\Шарп\Курсач\KR\KR\obj\Debug\KR.Form1.resources
+D:\Работы\Документы\Универ\2 курс\Шарп\Курсач\KR\KR\obj\Debug\KR.Properties.Resources.resources
+D:\Работы\Документы\Универ\2 курс\Шарп\Курсач\KR\KR\obj\Debug\KR.csproj.GenerateResource.cache
+D:\Работы\Документы\Универ\2 курс\Шарп\Курсач\KR\KR\obj\Debug\KR.csproj.CoreCompileInputs.cache
+D:\Работы\Документы\Универ\2 курс\Шарп\Курсач\KR\KR\obj\Debug\KR.exe
+D:\Работы\Документы\Универ\2 курс\Шарп\Курсач\KR\KR\obj\Debug\KR.pdb
