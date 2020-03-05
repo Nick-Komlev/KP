@@ -28,19 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.DataMng = new System.Windows.Forms.Button();
-            this.DataRepr = new System.Windows.Forms.Button();
             this.Exit = new System.Windows.Forms.Button();
+            this.DataRepr = new System.Windows.Forms.Button();
+            this.DataMng = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // DataMng
+            // Exit
             // 
-            this.DataMng.Location = new System.Drawing.Point(68, 64);
-            this.DataMng.Name = "DataMng";
-            this.DataMng.Size = new System.Drawing.Size(187, 170);
-            this.DataMng.TabIndex = 0;
-            this.DataMng.Text = "Управление данными";
-            this.DataMng.UseVisualStyleBackColor = true;
+            this.Exit.Location = new System.Drawing.Point(252, 286);
+            this.Exit.Name = "Exit";
+            this.Exit.Size = new System.Drawing.Size(106, 39);
+            this.Exit.TabIndex = 1;
+            this.Exit.Text = "Выход";
+            this.Exit.UseVisualStyleBackColor = true;
             // 
             // DataRepr
             // 
@@ -52,14 +52,14 @@
             this.DataRepr.UseVisualStyleBackColor = true;
             this.DataRepr.Click += new System.EventHandler(this.DataRepr_Click);
             // 
-            // Exit
+            // DataMng
             // 
-            this.Exit.Location = new System.Drawing.Point(252, 286);
-            this.Exit.Name = "Exit";
-            this.Exit.Size = new System.Drawing.Size(106, 39);
-            this.Exit.TabIndex = 1;
-            this.Exit.Text = "Выход";
-            this.Exit.UseVisualStyleBackColor = true;
+            this.DataMng.Location = new System.Drawing.Point(68, 64);
+            this.DataMng.Name = "DataMng";
+            this.DataMng.Size = new System.Drawing.Size(187, 170);
+            this.DataMng.TabIndex = 0;
+            this.DataMng.Text = "Управление данными";
+            this.DataMng.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -77,9 +77,9 @@
 
         #endregion
 
-        private System.Windows.Forms.Button DataMng;
-        private System.Windows.Forms.Button DataRepr;
         private System.Windows.Forms.Button Exit;
+        private System.Windows.Forms.Button DataRepr;
+        private System.Windows.Forms.Button DataMng;
     }
 }
 
