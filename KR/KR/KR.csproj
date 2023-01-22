@@ -33,6 +33,35 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.6.0, Culture=neutral, PublicKeyToken=0e99375e54769942, processorArchitecture=MSIL">
+      <HintPath>..\packages\Portable.BouncyCastle.1.8.6\lib\net40\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="DotSpatial.Projections, Version=1.9.0.0, Culture=neutral, PublicKeyToken=272632bddd08a38b, processorArchitecture=MSIL">
+      <HintPath>..\packages\DotSpatial.Projections.1.9\lib\net40-Client\DotSpatial.Projections.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=1.2.0.246, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpZipLib.1.2.0\lib\net45\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Word2016.Interop.1.0.0\lib\Microsoft.Office.Interop.Word.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="NPOI, Version=2.5.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.5.1\lib\net45\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OOXML, Version=2.5.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.5.1\lib\net45\NPOI.OOXML.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net, Version=2.5.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.5.1\lib\net45\NPOI.OpenXml4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXmlFormats, Version=2.5.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.5.1\lib\net45\NPOI.OpenXmlFormats.dll</HintPath>
+    </Reference>
+    <Reference Include="office, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Word2016.Interop.1.0.0\lib\office.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -53,19 +82,100 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
+    <Compile Include="ModAdd.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="ModAdd.Designer.cs">
+      <DependentUpon>ModAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SortF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SortF.Designer.cs">
+      <DependentUpon>SortF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AccountF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountF.Designer.cs">
+      <DependentUpon>AccountF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MngWrh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MngWrh.Designer.cs">
+      <DependentUpon>MngWrh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CountF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CountF.Designer.cs">
+      <DependentUpon>CountF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MngGds.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MngGds.Designer.cs">
+      <DependentUpon>MngGds.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GdAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GdAdd.Designer.cs">
+      <DependentUpon>GdAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GdChan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GdChan.Designer.cs">
+      <DependentUpon>GdChan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChAdd.Designer.cs">
+      <DependentUpon>ChAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ObjAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ObjAdd.Designer.cs">
+      <DependentUpon>ObjAdd.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="ModAdd.resx">
+      <DependentUpon>ModAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SortF.resx">
+      <DependentUpon>SortF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountF.resx">
+      <DependentUpon>AccountF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MngWrh.resx">
+      <DependentUpon>MngWrh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CountF.resx">
+      <DependentUpon>CountF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MngGds.resx">
+      <DependentUpon>MngGds.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GdAdd.resx">
+      <DependentUpon>GdAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GdChan.resx">
+      <DependentUpon>GdChan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChAdd.resx">
+      <DependentUpon>ChAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ObjAdd.resx">
+      <DependentUpon>ObjAdd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -76,6 +186,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\DataSources\Goods.datasource" />
     <None Include="Properties\DataSources\Warehouse.datasource" />
     <None Include="Properties\Settings.settings">
@@ -90,6 +201,44 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Access.Dao">
+      <Guid>{4AC9E1DA-5BAD-4AC7-86E3-24F4CDCECA28}</Guid>
+      <VersionMajor>12</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VSTOEE100">
+      <Guid>{AAB9C2AA-6036-4AE1-A41C-A40AB7F39520}</Guid>
+      <VersionMajor>10</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VSTOEE90">
+      <Guid>{E985809A-84A6-4F35-86D6-9B52119AB9D7}</Guid>
+      <VersionMajor>9</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
